@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --Green: hsl(75, 94%, 57%);
+
+      --White: hsl(0, 0%, 100%);
+
+      --Grey-700: hsl(0, 0%, 20%);
+      --Grey-800: hsl(0, 0%, 12%);
+      --Grey-900: hsl(0, 0%, 8%);
+
+    }
+
+    @font-face {
+      font-family: Inter;
+      src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      color: var(--White);
+
+      font-family: Inter;
+      font-size: 1rem;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: var(--Grey-900);
+    }
+
+    .card {
+      max-width: 28rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--Grey-800);
+      padding: 2rem;
+      border-radius: .5rem;
+      position: relative;
+    }
+    .card>h1{
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    .card-avatar {
+      height: 100px;
+      width: 100px;
+      border-radius: 100rem;
+      margin: 1rem 0;
+    }
+    p{
+      font-size: 14px;
+    }
+    .address{
+      color:var(--Green);
+      margin-top: .5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    .dis{
+      margin-bottom: 1.5rem;
+
+
+    }
+    .links{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    a{
+      display: inline-block;
+      text-align: center;
+      padding: 1rem;
+      width: 20rem;
+      background-color: var(--Grey-700);
+      vertical-align: middle;
+      border-radius: .5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover{
+      background-color: var(--Green);
+      color: var(--Grey-900);
+    }
+
+
+    @media only screen and (max-width: 375px) {
+      .card{
+        max-width: 96%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="assets/images/avatar-jessica.jpeg" class="card-avatar" alt="">
+    <h1>Jessica Randall</h1>
+    <p class="address">London, United Kingdom</p>
+    <p class="dis">"Front-end developer and avid reader."</p>
+    <div class="links">
+      <a href="#">GitHub</a>
+      <a href="#">Frontend Mentor</a>
+      <a href="#">Linkedin</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
