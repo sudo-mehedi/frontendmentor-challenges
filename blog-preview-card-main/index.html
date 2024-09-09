@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+
+      --Yellow: hsl(47, 88%, 63%);
+
+      --White: hsl(0, 0%, 100%);
+
+      --Gray-500: hsl(0, 0%, 42%);
+      --Gray-950: hsl(0, 0%, 7%);
+    }
+    @font-face {
+      font-family: Figtree;
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: content-box;
+      font-size: 1rem;
+      font-family: Figtree;
+    }
+
+    body {
+      background-color: var(--Yellow);
+      min-height: 100vh;
+      width: 100%;
+    }
+    .card{
+      max-width: 20rem;
+      background-color: var(--White);
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: .5rem .5rem;
+    }
+    .card-image{
+      width: 100%;
+      border-radius: 1rem;
+    }
+    .badge{
+      padding: .4rem;
+      padding-left: .6rem;
+      padding-right: .6rem;
+      color: black;
+      display: inline-block;
+      background-color: var(--Yellow);
+      margin: 1rem 0;
+      font-weight: 800;
+      border-radius: .2rem;
+    }
+    .card>h4{
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+    }
+    h1{
+      margin-bottom: 1rem;
+    }
+    p{
+      color: gray;
+      margin-bottom: 1rem;
+    }
+    .card-footer{
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+    }
+    .card-footer>div>img{
+      height: 32px;
+      width: 32px;
+    }
+    .card-footer>div>h4{
+      font-weight: 800;
+    }
+
+    @media only screen and (max-width: 375px) {
+      .card{
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center;">
+  <div class="card">
+    <img src="assets/images/illustration-article.svg" alt="" class="card-image">
+    <span class="badge">Learning</span>
+    <h4>Published 21 Dec 2023</h4>
+    <h1>
+      <a href="#">HTML & CSS foundations</a>
+    </h1>
+    <p>
+      These languages are the backbone of every website, defining structure, content, and presentation.
+    </p>
+    <div class="card-footer">
+      <div><img src="assets/images/image-avatar.webp" alt=""></div>
+      <div><h4>Greg Hooper</h4></div>
+    </div>
+  </div>
+</body>
+
+</html>
